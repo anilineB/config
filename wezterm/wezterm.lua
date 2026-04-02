@@ -9,8 +9,6 @@ config.font = wezterm.font_with_fallback({
 })
 config.use_ime = true
 config.macos_forward_to_ime_modifier_mask = "SHIFT|CTRL"
-config.window_background_opacity = 0.75
-config.macos_window_background_blur = 20
 
 -- ウィンドウのパディングを0に設定
 config.window_padding = {
@@ -40,7 +38,7 @@ config.window_frame = {
 
 -- タブバーを背景色に合わせる
 config.window_background_gradient = {
-  colors = { "#000000" },
+  colors = { "#1e1e1e" },
 }
 
 -- タブの追加ボタンを非表示
@@ -94,3 +92,4 @@ config.key_tables = require("keybinds").key_tables
 config.leader = { key = "q", mods = "CTRL", timeout_milliseconds = 2000 }
 
 return config
+
