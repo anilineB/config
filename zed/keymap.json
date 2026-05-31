@@ -1,0 +1,53 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-t": "terminal_panel::ToggleFocus",
+      "cmd-i": "agent::ToggleFocus",
+      "cmd-1": ["pane::ActivateItem", 0],
+      "cmd-2": ["pane::ActivateItem", 1],
+      "cmd-3": ["pane::ActivateItem", 2],
+      "cmd-4": ["pane::ActivateItem", 3],
+      "ctrl-1": ["workspace::ActivatePane", 0],
+      "ctrl-2": ["workspace::ActivatePane", 1],
+      "ctrl-3": ["workspace::ActivatePane", 2],
+      "ctrl-4": ["workspace::ActivatePane", 3],
+      "alt-cmd-right": "pane::ActivateNextItem",
+      "alt-cmd-left": "pane::ActivatePreviousItem",
+      "ctrl-cmd-right": "workspace::ActivateNextPane",
+      "ctrl-cmd-left": "workspace::ActivatePreviousPane",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-n": "editor::SelectDown",
+      "ctrl-shift-p": "editor::SelectUp",
+      "ctrl-shift-b": "editor::SelectLeft",
+      "ctrl-shift-f": "editor::SelectRight",
+      "ctrl-u": "editor::MovePageUp",
+      "ctrl-d": "editor::MovePageDown",
+      "ctrl-shift-u": "editor::SelectPageUp",
+      "ctrl-shift-d": "editor::SelectPageDown",
+      "cmd-shift-v": "markdown::OpenPreviewToTheSide",
+      "cmd-alt-v": "markdown::OpenFollowingPreview",
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "shift-a": "project_panel::NewDirectory",
+      "r": "project_panel::Rename",
+      "d": "project_panel::Trash",
+      "enter": "project_panel::Open",
+    },
+  },
+]
